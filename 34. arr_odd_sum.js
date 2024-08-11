@@ -4,8 +4,10 @@
 * Sample Input: [5, 7, 8, 10, 45, 30]
 */
 const numbers = [5, 7, 8, 10, 45, 30];
+
 function oddNumberArraySum(arr) {
   let sum = 0;
+
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] % 2 === 1) {
       sum += arr[i];
@@ -16,7 +18,7 @@ function oddNumberArraySum(arr) {
 
 console.log("odd number sum: ", oddNumberArraySum(numbers));
 
-//* shortcut method
+//* array reduce method
 const oddNumberArraySum2 = (numbers) => {
   const oddNumSum = numbers
     .filter((num) => num % 2 !== 0)

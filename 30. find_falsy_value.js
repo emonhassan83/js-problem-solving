@@ -13,13 +13,13 @@ const mixedArr = [
   NaN,
 ]; //* falsy value: false, undefined, nll, '', NaN, 0 */
 
-/* const trueArry = mixedArr.filter(function(el){
-    if(el){
-        return true;
-    }else{
-        return false;
-    }
-}); */
+const trueArr = mixedArr.filter(function (element) {
+  if (element) {
+    return true;
+  } else {
+    return false;
+  }
+});
 
-const trueArr = mixedArr.filter(Boolean); // shortcut method
+// const trueArr = mixedArr.filter(Boolean); //* shortcut method
 console.log(trueArr);

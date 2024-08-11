@@ -1,6 +1,6 @@
 //* Object theke "false value" kibabe khuje bad dite pari?
 
-const obj = {
+const person = {
   a: "Emon",
   b: undefined,
   c: "Emon Hassan",
@@ -14,13 +14,14 @@ const obj = {
   k: NaN,
 };
 
-const truthyObject = function (obj) {
-  for (let i in obj) {
-    if (!obj[i]) {
-      delete obj[i];
+const truthyObject = function (object) {
+  for (let key in object) {
+    if (!object[key]) {
+      delete object[key];
     }
   }
-  return obj;
+  return object;
 };
 
-console.log(truthyObject(obj));
+const res = truthyObject(person);
+console.log(res);

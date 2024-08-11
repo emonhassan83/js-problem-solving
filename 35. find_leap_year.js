@@ -9,11 +9,12 @@ function findLeapYear(arr) {
   let leapYears = [];
 
   for (let i = 0; i < arr.length; i++) {
-    if (isLeapYear(arr[i])) leapYears.push(arr[i]);
+    if (isLeapYear(arr[i])) {
+      leapYears.push(arr[i]);
+    }
   }
 
   if (leapYears.length > 0) {
-    console.log("Leap Years: " + leapYears.join(", "));
     return leapYears;
   }
 }
@@ -28,4 +29,4 @@ const findLeapYear2 = (arr) =>
     (year) => (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0
   );
 
-console.log(findLeapYear(years));
+console.log(findLeapYear2(years));

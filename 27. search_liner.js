@@ -5,9 +5,7 @@
  */
 
 function linearSearch(arr, val) {
-  const len = arr.length;
-
-  for (let i = 0; i < len; i++) {
+  for (let i = 0; i < arr.length; i++) {
     if (arr[i] === val) {
       return i;
     }
@@ -15,4 +13,5 @@ function linearSearch(arr, val) {
   return "not found!";
 }
 
-console.log(linearSearch(["a", "b", "c", "d", "e"], "c"));
+const res = linearSearch(["a", "b", "c", "d", "e"], "c");
+console.log(res);

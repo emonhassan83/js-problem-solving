@@ -6,11 +6,11 @@
 
 const str = "I love Bangladesh";
 
-function reverseWords(data) {
-  const dataAsArray = data.split(" "); //* [ 'I', 'love', 'Bangladesh' ]
+function reverseWords(string) {
+  const stringAsArray = string.split(" "); //* [ 'I', 'love', 'Bangladesh' ]
 
-  const result = dataAsArray.map((d) => {
-    return d.split("").reverse().join(""); //* [ 'I', 'evol', 'hsedalgnaB' ]
+  const result = stringAsArray.map((str) => {
+    return str.split("").reverse().join(""); //* [ 'I', 'evol', 'hsedalgnaB' ]
   });
 
   return result.join(" ");

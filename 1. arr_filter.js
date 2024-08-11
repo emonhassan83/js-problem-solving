@@ -11,15 +11,22 @@ const people = [
   { name: "Eve", age: 35, gender: "female" },
 ];
 
-const filterMappingArray = (arr) => {
-  const namesArr = [];
+// const filterMappingArray = (arr) => {
+//   const namesArr = [];
 
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i].gender === "male") {
-      namesArr.push(arr[i].name);
-    }
-  }
-  return namesArr;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i].gender === "male") {
+//       namesArr.push(arr[i].name);
+//     }
+//   }
+//   return namesArr;
+// };
+
+//* using array method
+const filterMappingArray = (arr) => {
+  return arr
+    .filter((person) => person.gender === "male")
+    .map((person) => person.name);
 };
 
 const res = filterMappingArray(people);

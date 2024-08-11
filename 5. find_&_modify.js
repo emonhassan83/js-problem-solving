@@ -10,12 +10,21 @@ const person = [
     { name: 'Diana', age: 28 }
 ];
 
+// const findAndModifyAge = (arr, name, age) => {
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i].name === name) {
+//             arr[i].age = age;
+//             break;
+//         }
+//     }
+//     return arr;
+// }
+
+//* using array find method
 const findAndModifyAge = (arr, name, age) => {
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i].name === name) {
-            arr[i].age = age;
-            break;
-        }
+    const person = arr.find(person => person.name === name);
+    if (person) {
+        person.age = age;
     }
     return arr;
 }

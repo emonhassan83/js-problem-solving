@@ -7,7 +7,8 @@ const numbers = [10, 5, 20, 15, 25];
 
 function findSmallest(arr) {
     let smallest = arr[0];
-    for (let i = 1; i < arr.length; i++) {
+
+    for (let i = 0; i < arr.length; i++) {
       if (arr[i] < smallest) {
         smallest = arr[i];
       }
